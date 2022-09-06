@@ -1,6 +1,5 @@
 import './App.css';
 import Content from './Content';
-import Footer from './Footer';
 import Navbar from './Navbar';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Error from './Error';
@@ -18,7 +17,6 @@ function App() {
         <Route path = "/team" element={<Team/>} />
         <Route path = "*" element={<Error/>}/>
       </Routes>
-      <Footer/>
     </div>
     </Router>
     </AppProvider>
